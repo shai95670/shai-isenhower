@@ -1,0 +1,223 @@
+//FONTS
+@font-face {
+    font-family: 'Gafta';
+    src: url('../assets/fonts/Gafata-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Bungee-Regular';
+    src: url('../assets/fonts/Bungee-Regular.ttf');
+}
+
+
+// USAGE
+body {
+    font-family: 'Gafta', sans-serif;
+    background-color: #522d5b;
+    font-size: 1.2rem;
+    color: #e7d39f;
+}
+
+p:hover {
+    font-weight: 600;
+}
+
+// SITE HEADER
+
+.logo-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    i {
+        color: #d7385e;
+        font-size: 2em;
+        margin-right: 10px;
+    }
+
+    .logo h1 {
+        color: #e7d39f;
+        margin-bottom: 82px;
+        font-family: 'Bungee-Regular', sans-serif;
+
+        span {
+            color: #d7385e;
+        }
+    }
+}
+
+// MAIN ABOUT SECTION
+
+.main-section-container {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 69px;
+
+    .about-container {
+        width: 50%;
+        border-right: 1px solid;
+        padding-right: 19px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        img {
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        p {
+            width: 47%;
+        }
+    }
+
+    .skills-outer-container {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        text-align: center;
+
+        h4,
+        h3 {
+            color: #d7385e;
+        }
+
+        .skills-inner-container {
+            display: flex;
+            justify-content: space-evenly;
+
+            .skill-box {
+                display: flex;
+                flex-direction: column;
+                width: 44%;
+                align-items: center;
+
+                i {
+                    font-size: 2rem;
+                }
+
+                p {
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+
+// PROJECT GALLERY
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 141px;
+    margin-bottom: 137px;
+
+    .project-box {
+        margin-right: 22px;
+        text-align: center;
+        background-color: #d7385e;
+        padding: 13px;
+        border-radius: 6%;
+        box-shadow: 2px 2px 2px 2px black;
+
+        img {
+            border-radius: 6%;
+        }
+    }
+}
+
+// FOOTER
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .footer-social-box {
+        width: 200px;
+        display: flex;
+        justify-content: space-evenly;
+
+        a {
+            border: 0;
+            background-color: #d7385e;
+            border: 50%;
+            padding: 9px;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            color: #e7d39f;
+            cursor: pointer;
+            text-align: center;
+
+            i {
+                font-size: 1.2rem;
+            }
+        }
+
+        a:hover {
+            background-color: #d8224dc7
+        }
+
+        a:active {
+            background-color: #d8224dc7;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    }
+}
+
+
+// RESPONSIVE
+
+@media (max-width: 952px) {
+    body {
+        font-family: 'Gafta', sans-serif;
+        background-color: #522d5b;
+        font-size: 1rem;
+        color: #e7d39f;
+    }
+}
+
+@media (max-width: 660px) {
+    .main-section-container {
+        display: flex;
+        justify-content: end;
+        margin-bottom: 69px;
+        flex-direction: column;
+
+        .about-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            border-right: none;
+            padding-right: 0px;
+
+            width: 100%;
+
+            border-bottom: 1px solid;
+            padding-bottom: 19px;
+
+            p {
+                width: 84%;
+            }
+        }
+
+        .skills-outer-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .projects-container .project-box {
+        margin-right: 0px;
+        margin-bottom: 22px;
+    }
+}

@@ -1,0 +1,183 @@
+@font-face {
+  font-family: "Gafta";
+  src: url("../assets/fonts/Gafata-Regular.ttf");
+}
+@font-face {
+  font-family: "Bungee-Regular";
+  src: url("../assets/fonts/Bungee-Regular.ttf");
+}
+body {
+  font-family: "Gafta", sans-serif;
+  background-color: #522d5b;
+  font-size: 1.2rem;
+  color: #e7d39f;
+}
+
+p:hover {
+  font-weight: 600;
+}
+
+.logo-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+.logo-container i {
+  color: #d7385e;
+  font-size: 2em;
+  margin-right: 10px;
+}
+.logo-container .logo h1 {
+  color: #e7d39f;
+  margin-bottom: 82px;
+  font-family: "Bungee-Regular", sans-serif;
+}
+.logo-container .logo h1 span {
+  color: #d7385e;
+}
+
+.main-section-container {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 69px;
+}
+.main-section-container .about-container {
+  width: 50%;
+  border-right: 1px solid;
+  padding-right: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.main-section-container .about-container img {
+  width: 200px;
+  border-radius: 50%;
+}
+.main-section-container .about-container p {
+  width: 47%;
+}
+.main-section-container .skills-outer-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+}
+.main-section-container .skills-outer-container h4,
+.main-section-container .skills-outer-container h3 {
+  color: #d7385e;
+}
+.main-section-container .skills-outer-container .skills-inner-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.main-section-container .skills-outer-container .skills-inner-container .skill-box {
+  display: flex;
+  flex-direction: column;
+  width: 44%;
+  align-items: center;
+}
+.main-section-container .skills-outer-container .skills-inner-container .skill-box i {
+  font-size: 2rem;
+}
+.main-section-container .skills-outer-container .skills-inner-container .skill-box p {
+  height: 100px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 141px;
+  margin-bottom: 137px;
+}
+.projects-container .project-box {
+  margin-right: 22px;
+  text-align: center;
+  background-color: #d7385e;
+  padding: 13px;
+  border-radius: 6%;
+  box-shadow: 2px 2px 2px 2px black;
+}
+.projects-container .project-box img {
+  border-radius: 6%;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-container .footer-social-box {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-container .footer-social-box a {
+  border: 0;
+  background-color: #d7385e;
+  border: 50%;
+  padding: 9px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  color: #e7d39f;
+  cursor: pointer;
+  text-align: center;
+}
+.footer-container .footer-social-box a i {
+  font-size: 1.2rem;
+}
+.footer-container .footer-social-box a:hover {
+  background-color: #d8224dc7;
+}
+.footer-container .footer-social-box a:active {
+  background-color: #d8224dc7;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+@media (max-width: 952px) {
+  body {
+    font-family: "Gafta", sans-serif;
+    background-color: #522d5b;
+    font-size: 1rem;
+    color: #e7d39f;
+  }
+}
+@media (max-width: 660px) {
+  .main-section-container {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 69px;
+    flex-direction: column;
+  }
+  .main-section-container .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-right: none;
+    padding-right: 0px;
+    width: 100%;
+    border-bottom: 1px solid;
+    padding-bottom: 19px;
+  }
+  .main-section-container .about-container p {
+    width: 84%;
+  }
+  .main-section-container .skills-outer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .projects-container .project-box {
+    margin-right: 0px;
+    margin-bottom: 22px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

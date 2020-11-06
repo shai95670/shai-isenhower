@@ -14,13 +14,14 @@
 body {
     font-family: 'Gafta', sans-serif;
     background-color: #522d5b;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #e7d39f;
 }
 
-p:hover {
-    font-weight: 600;
+span {
+    color: #d7385e;
 }
+
 
 // SITE HEADER
 
@@ -28,6 +29,19 @@ p:hover {
     display: flex;
     align-items: baseline;
     justify-content: center;
+
+    .logo {  
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+
+    .logo-container-circles {
+        border: 1px solid #d7385e;
+        width: 35px;
+        height: 29px;
+        border-radius: 50%;
+        background-color: #d7385e;  
+    }
 
     i {
         color: #d7385e;
@@ -50,36 +64,42 @@ p:hover {
 
 .main-section-container {
     display: flex;
-    justify-content: end;
+    justify-content: space-evenly;
     margin-bottom: 69px;
 
     .about-container {
-        width: 50%;
-        border-right: 1px solid;
-        padding-right: 19px;
+        width: 45%;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
 
         img {
-            width: 200px;
-            border-radius: 50%;
+            width: 383px;
+            border-radius: 5%;
+            height: 359px;
         }
 
         p {
-            width: 47%;
+            width: 383px;
+            line-height: 1.4;
+            font-weight: bolder;
+            text-shadow: 1px 1px black;
         }
     }
 
     .skills-outer-container {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 45%;
         text-align: center;
 
-        h4,
-        h3 {
+        .skill-container-title {
+          margin-top: 0;  
+        }
+
+        h3,
+        h2 {
             color: #d7385e;
         }
 
@@ -98,7 +118,10 @@ p:hover {
                 }
 
                 p {
-                    height: 100px;
+                    line-height: 1.4;
+                    font-weight: bolder;
+                    text-shadow: 1px 1px black;
+                    height: 148px;
                 }
             }
         }
@@ -115,13 +138,32 @@ p:hover {
     margin-top: 141px;
     margin-bottom: 137px;
 
+    .projects-container-title {
+        transform: rotate(-50deg);
+        // height: -22px;
+        text-decoration: underline;  
+    }
+
     .project-box {
+        display: flex;
+        flex-direction: column;
         margin-right: 22px;
         text-align: center;
         background-color: #d7385e;
-        padding: 13px;
-        border-radius: 6%;
+        padding: 19px;
+        border-radius: 5%;
         box-shadow: 2px 2px 2px 2px black;
+        width: 25%;
+
+        .tech-info {
+          text-align: left;  
+        }
+
+        .pin-icon {
+            font-size: 2.1rem;
+            text-align: left;
+            margin-bottom: 17px; 
+        }
 
         img {
             border-radius: 6%;
@@ -145,7 +187,7 @@ p:hover {
             border: 0;
             background-color: #d7385e;
             border: 50%;
-            padding: 9px;
+            padding: 12px;
             border-radius: 50%;
             width: 20px;
             height: 20px;

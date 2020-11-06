@@ -15,10 +15,11 @@
 
 <body>
     <div class="logo-container">
-        <i class="fas fa-skull"></i>
+        <span class="logo-container-circles"></span>
         <header class="logo">
             <h1><span>S</span>hai <span>I</span>senhower</h1>
         </header>
+        <span class="logo-container-circles"></span>
     </div>
 
     <main class="main-section-container">
@@ -35,27 +36,27 @@
         </div>
 
         <div class="skills-outer-container">
-            <h3>Skills</h3>
+            <h2 class="skill-container-title">Skills</h2>
             <div class="skills-inner-container">
                 <div class="skill-box">
                     <i class="fas fa-code"></i>
-                    <h4>FullStack Developer</h4>
+                    <h3>FullStack Developer</h3>
                     <p>
                         I like to code things from scratch, and enjoy bringing ideas to life in the browser.
                     </p>
-                    <h4>Technolegies</h4>
-                    <p>Mongodb, CSS, HTML, js, Node js, mysql, React, Angular, Vue, Python</p>
+                    <h3>Technolegies</h3>
+                    <p>Mongodb, CSS, HTML, js, Node js, mysql, React, Angular, Vue, Python, Scss</p>
                 </div>
 
                 <div class="skill-box">
                     <i class="fas fa-bug"></i>
-                    <h4>QA Tester</h4>
+                    <h3>QA Tester</h3>
                     <p>
                         I have a previous background in Web application testing.
                         I enjoy testing all the edge cases while building fullstack applications
                     </p>
-                    <h4>Technolegies</h4>
-                    <p>Postman</p>
+                    <h3>Technolegies</h3>
+                    <p>Postman, SQL, Toad</p>
                 </div>
             </div>
         </div>
@@ -63,23 +64,27 @@
 
     <section>
         <div class="projects-container">
+            <h2 class="projects-container-title">Projects</h2>
             <div class="project-box">
+                <i class="fas fa-map-pin pin-icon"></i>
                 <a href="https://partytimes.herokuapp.com/#/party-app" target="_blank">
-                    <img border="0" alt="W3Schools" src="imgs/party-time.JPG" width="200" height="200">
+                    <img border="0" alt="W3Schools" src="imgs/party-time.JPG" width="300" height="300">
                 </a>
                 <h3>Party Time</h3>
+                <div class="tech-info">
+                    <p>Frontend: Vue, Scss, js</p>
+                    <p>Backend: Express, Node.js, socket.io, mongoDB</p>
+                </div>
             </div>
             <div class="project-box">
+                <i class="fas fa-map-pin pin-icon"></i>
                 <a href="https://shai95670.github.io/Minesweeper/" target="_blank">
-                    <img border="0" alt="W3Schools" src="imgs/mine-sweeper.JPG" width="200" height="200">
+                    <img border="0" alt="W3Schools" src="imgs/mine-sweeper.JPG" width="300" height="300">
                 </a>
                 <h3>Mine Sweeper</h3>
-            </div>
-            <div class="project-box">
-                <a href="https://shai95670.github.io/Tetris_Game/" target="_blank">
-                    <img border="0" alt="W3Schools" src="imgs/Tetris.JPG" width="200" height="200">
-                </a>
-                <h3>Tetris</h3>
+                <div class="tech-info">
+                    <p>Frontend: html, css, js</p>
+                </div>
             </div>
         </div>
     </section>

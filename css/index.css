@@ -49,7 +49,7 @@ span {
 
 .main-section-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-bottom: 69px;
 }
 .main-section-container .about-container {
@@ -82,10 +82,11 @@ span {
 .main-section-container .skills-outer-container h3,
 .main-section-container .skills-outer-container h2 {
   color: #d7385e;
+  text-shadow: 1px 1px black;
 }
 .main-section-container .skills-outer-container .skills-inner-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .main-section-container .skills-outer-container .skills-inner-container .skill-box {
   display: flex;
@@ -123,11 +124,13 @@ span {
   background-color: #d7385e;
   padding: 19px;
   border-radius: 5%;
-  box-shadow: 2px 2px 2px 2px black;
-  width: 25%;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.15);
+  width: 400px;
 }
 .projects-container .project-box .tech-info {
   text-align: left;
+  font-weight: bolder;
+  text-shadow: 1px 1px black;
 }
 .projects-container .project-box .pin-icon {
   font-size: 2.1rem;
@@ -159,6 +162,7 @@ span {
   color: #e7d39f;
   cursor: pointer;
   text-align: center;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.15);
 }
 .footer-container .footer-social-box a i {
   font-size: 1.2rem;
@@ -172,45 +176,32 @@ span {
   transform: translateY(4px);
 }
 
-@media (max-width: 952px) {
-  body {
-    font-family: "Gafta", sans-serif;
-    background-color: #522d5b;
-    font-size: 1rem;
-    color: #e7d39f;
-  }
-}
-@media (max-width: 660px) {
+@media (max-width: 1087px) {
   .main-section-container {
-    display: flex;
-    justify-content: end;
-    margin-bottom: 69px;
     flex-direction: column;
   }
   .main-section-container .about-container {
-    display: flex;
+    width: 100%;
+  }
+  .main-section-container .skills-inner-container {
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    border-right: none;
-    padding-right: 0px;
-    width: 100%;
-    border-bottom: 1px solid;
-    padding-bottom: 19px;
-  }
-  .main-section-container .about-container p {
-    width: 84%;
   }
   .main-section-container .skills-outer-container {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    margin-top: 57px;
   }
 
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects-container .projects-container-title {
+    transform: none;
+  }
   .projects-container .project-box {
+    margin-bottom: 18px;
     margin-right: 0px;
-    margin-bottom: 22px;
   }
 }
 

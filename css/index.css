@@ -109,7 +109,6 @@ span {
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
-  margin-top: 141px;
   margin-bottom: 137px;
 }
 .projects-container .projects-container-title {
@@ -139,6 +138,8 @@ span {
 }
 .projects-container .project-box img {
   border-radius: 6%;
+  width: 400px;
+  height: 232px;
 }
 
 .footer-container {
@@ -202,6 +203,44 @@ span {
   .projects-container .project-box {
     margin-bottom: 18px;
     margin-right: 0px;
+  }
+}
+@media (max-width: 433px) {
+  .logo-container .logo h1 {
+    font-size: 1.6rem;
+  }
+
+  .main-section-container .about-container img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .main-section-container .about-container p {
+    width: 100%;
+    line-height: 1.5;
+  }
+
+  .main-section-container .skills-outer-container .skills-inner-container .skill-box {
+    width: 100%;
+  }
+  .main-section-container .skills-outer-container .skills-inner-container .skill-box p {
+    line-height: 1.5;
+  }
+
+  .projects-container .project-box {
+    width: 200px;
+  }
+  .projects-container .project-box img {
+    width: 200px;
+    height: 232px;
+  }
+
+  .footer-container p {
+    font-size: 1.2rem;
+  }
+
+  body {
+    font-size: 1.1rem;
   }
 }
 
